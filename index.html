@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+   
+    <meta name="theme-color" content="#21695a">
+    <title>Onkar Shaligram </title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/style-index.css">
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=reCaptchaCallback&render=explicit" async defer></script>
+</head>
+
+<body>
+    <!-- 
+        Navigation Menu
+     -->
+    <button type="button" class="left" onclick="window.location.href='#'">
+    <span >My Resume</span>
+    
+    </button>
+    
+    
+    <nav class="navBar">
+        <button type="button" aria-label="Menu button" class="navBar__btnMenu" id="menuBtn">
+            <span>Menu</span>
+            <i class="fas fa-bars navBar__hamburger"></i>
+        </button>
+
+        <ul class="navBar__menu" id="sideNav">
+            <li>
+                <button type="button" aria-label="Menu close button" class="navBar__btnClose" id="closeBtn">
+                    <i class="fas fa-times navBar__closeIcon"></i>
+                </button>
+            </li>
+            <li>
+                <a href="#header" class="navBar__link">Home</a>
+            </li>
+            <li>
+                <a href="#about" class="navBar__link">About</a>
+            </li>
+            <li>
+                <a href="#skills" class="navBar__link">Skills</a>
+            </li>
+            <li>
+                <a href="#projects" class="navBar__link">Projects</a>
+            </li>
+            <li>
+                <a href="#contact" class="navBar__link">Contact</a>
+            </li>
+            <li>
+                <a href="https://pages.razorpay.com/pl_EffHr7eq0RB0xN/view" target="blank" class="navBar__link">Donate</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- 
+        Main Content
+     -->
+    <main>
+        <!-- 
+            Main Header/Home
+         -->
+        <section id="header">
+            <header class="profile">
+                <img src="DSC_1032-crop.jpg" alt="Onkar Shaligram's Image" class="profile__image">
+                <h1 class="profile__name">Onkar</h1>
+                <h1 class="profile__name">Shaligram</h1>
+                <hr>
+                <p class="profile__profession"> <a href="" class="typewrite" data-period="2000" data-type='["Web developer.", "Android developer.", "AI/ML geek.", "UI/UX Designer." ]'>
+                </a></p>
+                <div class="socialMedia">
+
+                    <a href="https://twitter.com/shaligram_onkar" target="_blank">
+                        <i class="fab fa-twitter socialMedia__icon"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram socialMedia__icon"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/onkar-shaligram-a9799b190/" target="_blank">
+                        <i class="fab fa-linkedin socialMedia__icon"></i>
+                    </a>
+
+                    <a href="https://github.com/onkar-shaligram" target="_blank">
+                        <i class="fab fa-github socialMedia__icon"></i>
+                    </a>
+                    
+                </div>
+                <a href="#about" class="profile__link">Know More</a>
+            </header>
+        </section>
+        <!-- 
+            WebSite Content
+         -->
+        <div class="content">
+            <!-- 
+                About Me Section
+             -->
+            <section id="about" class="paddingTop">
+                <h1 class="content__heading">About Me</h1>
+                <hr>
+                <p class="content__para">
+                    Hey, I'm Onkar Shaligram, a 18-year-old undergrad, currently living in Bhopal (MP), India. Originally from Pune (MH), India.
+                </p>
+
+                <p class="content__para">
+                   I am a programmer with intermidiate knowledge of front-end & back-end techniques. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, as you learn faster and much more. As the saying goes: <br> 'Two heads are better than one.!!'.
+                </p>
+
+                <p class="content__para">
+                    I will be earning a degree in Bachelor of Technology in Computer Science from VIT Bhopal University probably in 2023.
+                </p>
+
+                <p class="content__para">If you wish to connect with me, then find me at
+                    <a href="https://twitter.com/shaligram-onkar" target="_blank" class="content__link">Twitter</a>,
+                    <a href="https://www.linkedin.com/in/onkar-shaligram-a9799b190/" target="_blank" class="content__link"> Linkedin</a> and also on
+                    <a href="https://github.com/onkar-shaligram" target="_blank" class="content__link">Github</a>.
+                </p>
+
+                <p class="content__para">
+                    <strong>
+                        <a href="https://rzp.io/l/4l0UoiD" class="content__link content__link--contact" target="_blank" >Did you like the website? or got inspired? or copied the theme? No problem! Just buy me a starbucks and make me happy!!!</a>.
+                    </strong>
+                </p>
+            </section>
+            <!-- 
+                Skills Section
+             -->
+            <section id="skills" class="paddingTop">
+                <h1 class="content__heading">My Skills</h1>
+                <hr>
+                <p class="content__para textCenter">The skills that I have gained so far are listed below:</p>
+
+                <div class="flexParent">
+
+                    <figure class="flexParent__skill">
+                        <svg class="logo" viewBox="0 0 128 128">
+                            <use xlink:href="assets/images/svg/svg-sprite.svg#icon-html"></use>
+                        </svg>
+                        <figcaption>HTML5</figcaption>
+                    </figure>
+
+                    <figure class="flexParent__skill">
+                        <svg class="logo" viewBox="0 0 128 128">
+                            <use xlink:href="assets/images/svg/svg-sprite.svg#icon-css"></use>
+                        </svg>
+                        <figcaption>CSS</figcaption>
+                    </figure>
+
+                    <figure class="flexParent__skill">
+                        <svg class="logo" viewBox="0 0 128 128">
+                            <use xlink:href="assets/images/svg/svg-sprite.svg#icon-js"></use>
+                        </svg>
+                        <figcaption>JavaScript</figcaption>
+                    </figure>
+
+                    <figure class="flexParent__skill">
+                        <svg class="logo" viewBox="0 0 128 128">
+                            <use xlink:href="assets/images/svg/svg-sprite.svg#icon-jquery"></use>
+                        </svg>
+                        <figcaption>Jquery</figcaption>
+                    </figure>
+
+                    <figure class="flexParent__skill">
+                       <img class="iicon" src="https://img.icons8.com/color/100/000000/c-plus-plus-logo.png"/>
+                        <figcaption>C++</figcaption>
+                    </figure>
+
+                    <figure class="flexParent__skill">
+                        <img src="https://img.icons8.com/color/100/000000/c-programming.png"/>
+                        <figcaption>C</figcaption>
+                    </figure>
+
+                    <figure class="flexParent__skill">
+                       <img src="https://img.icons8.com/color/100/000000/firebase.png"/>
+                        <figcaption>fireBase</figcaption>
+                    </figure>
+
+                    <figure class="flexParent__skill">
+                        <svg class="logo" viewBox="0 0 128 128">
+                            <use xlink:href="assets/images/svg/svg-sprite.svg#icon-java"></use>
+                        </svg>
+                        <figcaption>Java</figcaption>
+                    </figure>
+
+                    <figure class="flexParent__skill">
+                        <img src="https://img.icons8.com/color/100/000000/flutter.png"/>
+                        <figcaption>Flutter</figcaption>
+                    </figure>
+
+                    <figure class="flexParent__skill">
+                        <img src="https://img.icons8.com/color/100/000000/source-code.png"/>
+                        <figcaption>Dart</figcaption>
+                    </figure>
+
+                    <figure class="flexParent__skill">
+                        <img src="https://img.icons8.com/color/100/000000/git.png"/>
+                        <figcaption>Git</figcaption>
+                    </figure>
+
+                    <figure class="flexParent__skill">
+                        <img src="https://img.icons8.com/color/100/000000/python.png"/>
+                        <figcaption>Python</figcaption>
+                    </figure>
+
+                </div>
+
+                <h1 class="content__heading paddingTop" id="projects">Skills I'm Learning</h1>
+                <hr>
+                <div class="flexParent">
+
+                    <figure class="flexParent__skill">
+                        <svg class="logo" viewBox="0 0 128 128">
+                            <use xlink:href="assets/images/svg/svg-sprite.svg#icon-node"></use>
+                        </svg>
+                        <figcaption>Node.JS</figcaption>
+                    </figure>
+
+                    <figure class="flexParent__skill">
+                       <img src="https://img.icons8.com/color/100/000000/angularjs.png"/>
+                        <figcaption>Angular</figcaption>
+                    </figure>
+
+                    <figure class="flexParent__skill">
+                        <svg class="logo" viewBox="0 0 128 128">
+                            <use xlink:href="assets/images/svg/svg-sprite.svg#icon-webpack"></use>
+                        </svg>
+                        <figcaption>Webpack</figcaption>
+                    </figure>
+
+                    <figure class="flexParent__skill">
+                        <svg class="logo" viewBox="0 0 128 128">
+                            <use xlink:href="assets/images/svg/svg-sprite.svg#icon-mongo"></use>
+                        </svg>
+                        <figcaption>MongoDB</figcaption>
+                    </figure>
+                </div>
+
+
+                <h1 class="content__heading paddingTop">PROJECTS</h1>
+                <hr>
+                <p class="content__para textCenter">All my projects can be found on my <strong><a href="https://github.com/onkar-shaligram"target="_blank" style="text-decoration: none; color: #0138B7;">Github</a> </strong> account</p>
+                <div class="flexParent">
+                    <a href="https://drive.google.com/file/d/128JZh7fSJrhleQ6cA57BiuSRep8MeJRt/view?usp=sharing" target="_blank" style="text-decoration: none; color: #000000;">
+                    <figure class="flexParent__skill">
+                        <img src="https://img.icons8.com/material/100/000000/tea-cup.png"/>
+                        
+                        <figcaption>CoffeeWala App</figcaption>
+                    </figure>
+                </a>
+
+                <a href="https://onkar-shaligram.github.io/" target="_blank" style="text-decoration: none; color: #000000;">
+                    <figure class="flexParent__skill">
+                        <img src="https://img.icons8.com/wired/100/000000/domain.png"/>
+                        <figcaption>Portfolio WebSite</figcaption>
+                    </figure>
+                </a>
+                </div>
+
+            </section>
+            <!-- 
+                Contact Me Section
+             -->
+            <section id="contact" class="paddingTop">  
+                <h1 class="content__heading">Get in Touch</h1>
+                <hr>
+
+                <form class="contactForm js-contactForm" id="ajaxForm" action="https://formcarry.com/s/G-4SQ70qhCMS" method="POST" accept-charset="UTF-8">
+
+                    <form id="my-formcarry" accept-charset="UTF-8">
+                        ...
+                                              
+                    <div class="inputFields">
+
+                        <input type="text" placeholder="Name" id="name" class="contactForm__input input" name="name" autocomplete="name" required>
+
+                        <input type="email" placeholder="Email" id="email" class="contactForm__input input" name="email" autocomplete="email" required>
+
+                    </div>
+                    <input type="text" placeholder="Subject" name="subject" class="contactForm__input subject" required>
+
+                    <textarea name="message" id="message" class="contactForm__input textBox" cols="30" rows="10" placeholder="Message" required></textarea>
+
+                    <div id="g-recaptcha"></div>
+                    <br />
+
+                    <input type="submit" name="submit" value="Send Message" class="contactForm__submit">
+
+                </form>
+
+
+                <script src="https://carrier.formcarry.com/js/v1.js"></script>
+<script>
+  formcarry({
+    form: "G-4SQ70qhCMS",
+    // id or the class name of the form element, only form element allowed
+    // works with css selectors
+    // # <= for id
+    // . <= for class
+    element: "#my-formcarry",
+    extraData: {
+      // add whatever you want
+      screenSize: `${window.screen.width}x${window.screen.height}`,
+      language: window.navigator.language,
+    },
+    // Success callback, you can show alert messages
+    // or redirect the user in this function
+    onSuccess: function(response){
+      alert(response)
+    },
+    // Error callback, a good place to show errors 🗿
+    onError: function(error){
+      alert(error)
+    }
+  });
+</script>
+
+                <div id="submitSuccess" class="successBox">
+                    <p class="successMsg" id="successMsg">Message Sent!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 
+        footer
+     -->
+    <footer class="footer">
+
+        <div class="socialMedia">
+
+            <a href="https://twitter.com/shaligram_onkar" target="_blank">
+                <i class="fab fa-twitter socialMedia__icon"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram socialMedia__icon"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/onkar-shaligram-a9799b190/" target="_blank">
+                <i class="fab fa-linkedin socialMedia__icon"></i>
+            </a>
+
+            <a href="https://github.com/onkar-shaligram" target="_blank">
+                <i class="fab fa-github socialMedia__icon"></i>
+            </a>
+
+        </div>
+
+        <p class="copyright">&copy; Onkar Shaligram</p>
+
+    </footer>
+
+    <!-- 
+        Various Scripts
+     -->
+    <script src="assets/scripts/smooth-scroll.polyfills.min.js"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/solid.js" integrity="sha384-Z7p3uC4xXkxbK7/4keZjny0hTCWPXWfXl/mJ36+pW7ffAGnXzO7P+iCZ0mZv5Zt0"
+        crossorigin="anonymous"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/brands.js" integrity="sha384-ZqDZAkGUHrXxm3bvcTCmQWz4lt7QGLxzlqauKOyLwg8U0wYcYPDIIVTbZZXjbfsM"
+        crossorigin="anonymous"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/fontawesome.js" integrity="sha384-juNb2Ils/YfoXkciRFz//Bi34FN+KKL2AN4R/COdBOMD9/sV/UsxI6++NqifNitM"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/scripts/script-index.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <script src="https://carrier.formcarry.com/js/v1.js"></script>
+ 
+
+</body>
+
+</html>
