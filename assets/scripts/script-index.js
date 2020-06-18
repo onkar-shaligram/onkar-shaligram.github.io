@@ -56,13 +56,17 @@ var TxtType = function(el, toRotate, period) {
     };
 
 
+//Blinking effect
 
+function blink () {
+ document.getElementById('donate').style.color = 'red';
+ setTimeout('setBlink()', 1000);
+};
 
-
-
-
-
-
+function setBlink() {
+  document.getElementById('donate').style.color = 'blue';
+  setTimeout('blink()', 1000);
+}
 
 
 
