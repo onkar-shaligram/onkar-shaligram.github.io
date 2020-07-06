@@ -19,120 +19,12 @@ body {
 /* 
    Navigation styling
 */
-
-.navBar__btnMenu {
-  background: var(--primaryColor);
-  color: rgba(255, 255, 255, 0.8);
-  border: 0;
-  padding: 1rem 1.2rem;
-  font-weight: bold;
-  position: fixed;
-  right: 1rem;
-  top: 1rem;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+#myNavbar {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.left {
- position: fixed;
-    top: 20px;
-    bottom: 664px;
-    right: 20px;
-    left: 20px;
-    display: flex;
-    height: 38.4px;
-    padding: 10px 12px 10px 12px;
-    background:  var(--primaryColor);
-    background-position: 0% 0%;
-    color: rgba(255, 255, 255, 0.8);;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18.4px;
-    text-decoration: none solid rgba(255, 255, 255, 0.8);
-    text-align: center;
-    word-spacing: 0px;
-    border: 0px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0s ease 0s;
-}
 
-.navBar__btnMenu:hover {
-  opacity: 0.9;
-}
-
-.navBar__hamburger,
-.navBar__closeIcon {
-  width: 1.6rem;
-}
-
-.navBar__hamburger {
-  margin-left: 1.6rem;
-}
-
-.navBar__menu {
-  height: 100%;
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  right: 0;
-  background: #111;
-  opacity: 0.9;
-  overflow-x: hidden;
-  padding: 0;
-  padding-top: 6.4rem;
-  margin: 0;
-  transition: width 0.4s;
-  width: 0;
-  list-style-type: none;
-}
-
-.isActive {
-  width: 20rem;
-}
-
-.navBar__link {
-  padding: 1.6rem 0;
-  padding-left: 3.2rem;
-  text-decoration: none;
-  font-size: 1.8rem;
-  color: rgba(0, 78, 255, 0.79);
-  display: block;
-  transition: 0.3s;
-  cursor: pointer;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.navBar__link:hover {
-  color: var(--textColorWhite);
-}
-
-.navBar__btnClose {
-  position: absolute;
-  top: 1rem;
-  right: 1.6rem;
-  padding: 0;
-  margin: 0;
-  background: none;
-  border: 0;
-  padding: 1.3rem;
-  cursor: pointer;
-}
-
-.navBar__closeIcon {
-  color: var(--secondaryColor);
-  font-size: 2.2rem;
-}
-
-.navBar__btnClose:hover .navBar__closeIcon {
-  opacity: 0.8;
-}
 
 /* 
     Header section
@@ -140,8 +32,9 @@ body {
 
 .profile {
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 8rem;
   margin-bottom: 4rem;
+  margin-top: 4%;
 }
 
 .profile__image {
@@ -158,6 +51,7 @@ body {
   font-weight: 900;
   margin: 0;
   color: var(--textColorWhite);
+  pointer-events: none !important;
 }
 
 .profile hr {
@@ -216,7 +110,8 @@ body {
 */
 
 .content {
-  background-color: rgba(230, 230, 230, 0.88);
+  background-color: rgba(223, 210, 210, 0.808);
+  border-radius: 25px;
   padding: 3rem;
   margin: 0 auto;
   max-width: 90rem;

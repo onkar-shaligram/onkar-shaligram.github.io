@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
    
    
     <meta name="theme-color" content="#21695a">
@@ -13,50 +17,55 @@
     <link rel="stylesheet" href="assets/styles/style-index.css">
 
     <script src="https://www.google.com/recaptcha/api.js?onload=reCaptchaCallback&render=explicit" async defer></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 </head>
 
-<body>
-    <!-- 
-        Navigation Menu
-     -->
-    <button type="button" class="left" onclick="window.location.href='#'">
-    <span >My Resume</span>
-    
-    </button>
-    
-    
-    <nav class="navBar">
-        <button type="button" aria-label="Menu button" class="navBar__btnMenu" id="menuBtn">
-            <span>Menu</span>
-            <i class="fas fa-bars navBar__hamburger"></i>
-        </button>
 
-        <ul class="navBar__menu" id="sideNav">
-            <li>
-                <button type="button" aria-label="Menu close button" class="navBar__btnClose" id="closeBtn">
-                    <i class="fas fa-times navBar__closeIcon"></i>
-                </button>
-            </li>
-            <li>
-                <a href="#header" class="navBar__link">Home</a>
-            </li>
-            <li>
-                <a href="#about" class="navBar__link">About</a>
-            </li>
-            <li>
-                <a href="#skills" class="navBar__link">Skills</a>
-            </li>
-            <li>
-                <a href="#projects" class="navBar__link">Projects</a>
-            </li>
-            <li>
-                <a href="#contact" class="navBar__link">Contact</a>
-            </li>
-            <li>
-                <a href="https://pages.razorpay.com/pl_EffHr7eq0RB0xN/view" target="blank" class="navBar__link" style="color:yellow">Donate</a>
-            </li>
-        </ul>
-    </nav>
+
+<body  data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!-- 
+        Sticky Navigation bar 
+    -->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: rgba(0, 0, 0, 0.9); height: 6%;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+                <script>
+                  $(document).click(function (event) {
+                    var clickover = $(event.target);
+                    var $navbar = $(".navbar-collapse");               
+                    var _opened = $navbar.hasClass("in");
+                    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+                        $navbar.collapse('hide');
+                    }
+                });
+                </script>
+            </button>
+            <a class="navbar-brand" href="#" style="color: white; font-size: 130%; letter-spacing: 0.4px;"><strong>Onkar Shaligram</strong></a>
+
+          </div>
+          <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="https://pages.razorpay.com/pl_EffHr7eq0RB0xN/view" target="blank" style="color: yellow;">Donate</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </nav>    
+    
     <!-- 
         Main Content
      -->
@@ -67,10 +76,10 @@
         <section id="header">
             <header class="profile">
                 <img src="DSC_1032-crop.jpg" alt="Onkar Shaligram's Image" class="profile__image">
-                <h1 class="profile__name">Onkar</h1>
+                <h1 class="profile__name" >Onkar</h1>
                 <h1 class="profile__name">Shaligram</h1>
                 <hr>
-                <p class="profile__profession"> <a href="" class="typewrite" data-period="2000" data-type='["Web developer.", "Android developer.", "AI/ML geek.", "UI/UX Designer." ]'>
+                <p class="profile__profession"> <a class="typewrite" data-period="2000" data-type='["Web developer.", "Android developer.", "AI/ML geek.", "UI/UX Designer." ]'>
                 </a></p>
                 <div class="socialMedia">
 
@@ -78,7 +87,7 @@
                         <i class="fab fa-twitter socialMedia__icon"></i>
                     </a>
 
-                    <a href="" target="_blank">
+                    <a href="#" target="_blank">
                         <i class="fab fa-instagram socialMedia__icon"></i>
                     </a>
 
@@ -91,7 +100,7 @@
                     </a>
                     
                 </div>
-                <a href="#about" class="profile__link">Know More</a>
+                <a href="#" class="profile__link">My Resume</a>
             </header>
         </section>
         <!-- 
@@ -377,7 +386,7 @@
 
     <script src="assets/scripts/script-index.js" onload="blink();"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-
+    <script src="assets/js/bootstrap.js"></script>
     <script src="https://carrier.formcarry.com/js/v1.js"></script>
  
 
