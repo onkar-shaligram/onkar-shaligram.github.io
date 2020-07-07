@@ -6,8 +6,11 @@
   --sectionHeading: #444;
   --textColorBlack: #333;
   --textColorWhite: #fff;
-  font-size: 62.5%;
+   font-size: 62.5%;
+   overflow-x: hidden;
 }
+
+
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -52,6 +55,8 @@ body {
   margin: 0;
   color: var(--textColorWhite);
   pointer-events: none !important;
+  animation: heartBeat; 
+  animation-duration: 2s;
 }
 
 .profile hr {
@@ -115,6 +120,7 @@ body {
   padding: 3rem;
   margin: 0 auto;
   max-width: 90rem;
+  
 }
 
 .content hr {
