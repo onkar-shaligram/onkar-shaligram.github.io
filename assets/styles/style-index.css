@@ -19,6 +19,8 @@ body {
   font-weight: 500;
 }
 
+
+
 /* 
    Navigation styling
 */
@@ -447,11 +449,25 @@ h2.f4.text-normal.mb-3 {
 
 @media screen and (min-width: 768px) {
   body {
+    /* background-image: url('../images/image1copy.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+    background-color: grey;
+  }
+  #particles-js {
     background-image: url('../images/image1copy.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
   }
   .navBar__btnMenu {
     right: 2rem;

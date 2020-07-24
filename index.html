@@ -27,7 +27,8 @@
 
 
 <body  data-spy="scroll" data-target=".navbar" data-offset="50">
-
+   
+   
     <!-- 
         Sticky Navigation bar 
     -->
@@ -73,6 +74,7 @@
         Main Content
      -->
     <main>
+        <div id="particles-js"> </div>
         <!-- 
             Main Header/Home
          -->
@@ -341,30 +343,30 @@
 
 
                 <script src="https://carrier.formcarry.com/js/v1.js"></script>
-<script>
-  formcarry({
-    form: "G-4SQ70qhCMS",
-    // id or the class name of the form element, only form element allowed
-    // works with css selectors
-    // # <= for id
-    // . <= for class
-    element: "#my-formcarry",
-    extraData: {
-      // add whatever you want
-      screenSize: `${window.screen.width}x${window.screen.height}`,
-      language: window.navigator.language,
-    },
-    // Success callback, you can show alert messages
-    // or redirect the user in this function
-    onSuccess: function(response){
-      alert(response)
-    },
-    // Error callback, a good place to show errors 🗿
-    onError: function(error){
-      alert(error)
-    }
-  });
-</script>
+                    <script>
+                    formcarry({
+                        form: "G-4SQ70qhCMS",
+                        // id or the class name of the form element, only form element allowed
+                        // works with css selectors
+                        // # <= for id
+                        // . <= for class
+                        element: "#my-formcarry",
+                        extraData: {
+                        // add whatever you want
+                        screenSize: `${window.screen.width}x${window.screen.height}`,
+                        language: window.navigator.language,
+                        },
+                        // Success callback, you can show alert messages
+                        // or redirect the user in this function
+                        onSuccess: function(response){
+                        alert(response)
+                        },
+                        // Error callback, a good place to show errors 🗿
+                        onError: function(error){
+                        alert(error)
+                        }
+                    });
+                    </script>
 
                 <div id="submitSuccess" class="successBox">
                     <p class="successMsg" id="successMsg">Message Sent!</p>
@@ -399,8 +401,8 @@
         </div>
 
         <p class="copyright">&copy; Onkar Shaligram</p>
-
     </footer>
+
 
     <!-- 
         Various Scripts
@@ -420,6 +422,8 @@
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="https://carrier.formcarry.com/js/v1.js"></script>
+    <script src="assets/scripts/particles.min.js"></script>
+    <script src="assets/scripts/app.js"></script>
  
 
 </body>
