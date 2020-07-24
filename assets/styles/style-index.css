@@ -196,15 +196,15 @@ body {
 .calendar {
   font-family: Helvetica, arial;
   border: none;
-  border-radius: 3px;
   min-height: 243px;
   text-align: center;
   margin: 0 auto;
+  width: 100%;
 }
 
 .calendar-graph text.wday,
 .calendar-graph text.month {
-  font-size: 10px;
+  font-size: 12px;
   fill: #000;
 }
 
