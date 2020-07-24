@@ -441,9 +441,12 @@ h2.f4.text-normal.mb-3 {
     media queries for responsive design
 */
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 360px ) and (max-width: 480px) {
   .flexParent__skill {
     flex-basis: 13rem;
+  }
+  #particles-js {
+    display: none;
   }
 }
 
@@ -457,7 +460,7 @@ h2.f4.text-normal.mb-3 {
     background-color: grey;
   }
   #particles-js {
-    background-image: url('../images/image1copy.jpg');
+    background-image: url('../images/image2copy_blur.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
