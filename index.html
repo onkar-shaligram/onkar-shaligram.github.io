@@ -274,9 +274,19 @@
                     </div>
 
                     <script>
-                    GitHubCalendar(".calendar", "onkar-shaligram");
-                    // or enable responsive functionality
-                    GitHubCalendar(".calendar", "onkar-shaligram", { responsive: true });
+                        GitHubCalendar(".calendar", "onkar-shaligram");
+                    
+                        // or enable responsive functionality:
+                        GitHubCalendar(".calendar", "onkar-shaligram", 
+                        { responsive: true }
+                        );
+                    
+                        // Use a proxy
+                        GitHubCalendar(".calendar", "onkar-shaligram", 
+                        { proxy (username) 
+                            { 
+                                return fetch(`https://your-proxy.com/github?user=${username}`).then(r => r.text()) 
+                        }});
                     </script>
 
                 </div>
@@ -429,3 +439,4 @@
 </body>
 
 </html>
+
