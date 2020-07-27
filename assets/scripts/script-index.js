@@ -167,7 +167,7 @@ function reCaptchaCallback() {
     'sitekey': RC2KEY,
     'callback': reCaptchaVerify,
     'expired-callback': reCaptchaExpired,
-    'theme': 'dark',
+    'theme': 'light',
   });
 }
 
