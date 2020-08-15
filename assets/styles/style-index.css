@@ -229,7 +229,7 @@ TECHNICAL SKILLS
 }
 
 .progress, .progress-bar {
-  height: 1.2rem;
+  height: 1.5rem;
   transition: .3s;
 }
 
@@ -245,20 +245,6 @@ TECHNICAL SKILLS
     transform: scale(1);
     margin-left: 20px;
   }
-}
-
-@keyframes fillBar {
-  to {
-    transform: scaleX(1);
-  }
-}
-
-
-
-
-.heart {
-  color: red;
-  font-size: 22px;
 }
 
 /*
