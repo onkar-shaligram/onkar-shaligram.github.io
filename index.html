@@ -356,7 +356,7 @@
                 <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
                 <link
                 rel="stylesheet"
-                href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+                href="assets/styles/style-index.css"
                 />
 
                 <!-- Prepare a container for your calendar. -->
@@ -376,7 +376,7 @@
                     proxy (username) {
                     return fetch(`https://your-proxy.com/github?user=${username}`)
                     }
-                }).then(r => r.text())
+                }).then(r => r.text());
                 </script>
                 </div>
 
